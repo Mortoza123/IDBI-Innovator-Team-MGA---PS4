@@ -1,0 +1,28 @@
+file,column,description
+01_retail_structured_clean.csv,borrower_id,Unique retail borrower ID (synthetic)
+01_retail_structured_clean.csv,loan_segment,Always 'Retail'
+01_retail_structured_clean.csv,default_flag,"Target: 1 = serious delinquency within 2yrs, 0 = none"
+01_retail_structured_clean.csv,RevolvingUtilizationOfUnsecuredLines,"Credit card & line balance / credit limits, clipped at 2.0"
+01_retail_structured_clean.csv,age,Borrower age in years
+01_retail_structured_clean.csv,DebtRatio,"Monthly debt payments / monthly gross income, outlier-clipped"
+01_retail_structured_clean.csv,MonthlyIncome,Monthly income; missing values imputed with median
+01_retail_structured_clean.csv,NumberOfOpenCreditLinesAndLoans,Count of open loans/credit lines
+01_retail_structured_clean.csv,NumberOfTimes90DaysLate,Times borrower was 90+ days late
+01_retail_structured_clean.csv,NumberRealEstateLoansOrLines,Count of mortgage/real estate loans
+01_retail_structured_clean.csv,NumberOfDependents,Dependents; missing imputed with 0
+02_msme_structured_clean.csv,borrower_id,"Unique MSME/corporate borrower ID (synthetic, links to files 04 & 05)"
+02_msme_structured_clean.csv,loan_segment,Always 'MSME'
+02_msme_structured_clean.csv,default_flag,"Target: 1 = bankrupt, 0 = healthy"
+02_msme_structured_clean.csv,[93 financial ratio columns],"ROA, operating margin, liquidity/solvency ratios etc. - raw Taiwan Economic Journal features, no nulls"
+03_news_sentiment_scored.csv,news_id,Unique headline ID
+03_news_sentiment_scored.csv,sentiment_label,Human-annotated label: positive/negative/neutral (Financial PhraseBank)
+03_news_sentiment_scored.csv,headline,Financial news sentence/headline text
+03_news_sentiment_scored.csv,vader_compound,"VADER compound sentiment score, range -1 to +1"
+03_news_sentiment_scored.csv,vader_pos / vader_neg,"VADER positive/negative sub-scores, 0 to 1"
+04_msme_unstructured_features.csv,borrower_id,Links to files 02 & 05
+04_msme_unstructured_features.csv,gst_sentiment / call_sentiment,VADER compound score of GST filing notes / call notes
+04_msme_unstructured_features.csv,gst_delay_flag,1 if GST notes mention late/delayed filing
+04_msme_unstructured_features.csv,call_stress_flag,1 if call notes mention deferment/escalation/dispute etc.
+04_msme_unstructured_features.csv,unstructured_risk_score,Composite 0-1 risk score blended from sentiment + flags (higher = riskier)
+04_msme_unstructured_features.csv,gst_filing_notes / collection_call_notes,"Raw synthetic text (concatenated entries, '||' separated)"
+05_msme_fused_model_ready.csv,[all columns from 02 + engineered columns from 04],Final fused table - one row per MSME borrower

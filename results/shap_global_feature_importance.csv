@@ -1,0 +1,37 @@
+,mean_abs_shap
+gst_delay_flag,2.182194
+unstructured_risk_score,0.9330991
+Persistent EPS in the Last Four Seasons,0.8290335
+Borrowing dependency,0.72712123
+ROA(C) before interest and depreciation before interest,0.60424906
+gst_sentiment,0.4237991
+call_sentiment,0.42017612
+Non-industry income and expenditure/revenue,0.35708487
+Debt ratio %,0.33241946
+call_stress_flag,0.32353893
+Operating profit per person,0.32262596
+Cash/Total Assets,0.3098383
+Net Value Per Share (B),0.30419782
+Equity to Liability,0.2986818
+Operating Gross Margin,0.286331
+Retained Earnings to Total Assets,0.27225092
+Working capitcal Turnover Rate,0.22715808
+Current Liability to Current Assets,0.1970152
+Current Liabilities/Equity,0.19472823
+Operating Profit Rate,0.18790981
+Working Capital to Total Assets,0.18059406
+Working Capital/Equity,0.15994388
+Inventory/Working Capital,0.15055467
+Tax rate (A),0.13616385
+Interest Expense Ratio,0.13485284
+Total Asset Growth Rate,0.13244185
+Degree of Financial Leverage (DFL),0.10344663
+structured_x_unstructured_risk,0.10266182
+Operating Funds to Liability,0.09050894
+Net Income to Stockholder's Equity,0.08716497
+Total income/Total expense,0.08526931
+Pre-tax net Interest Rate,0.070813835
+Current Liability to Assets,0.067330495
+Operating Profit Per Share (Yuan ¥),0.0572592
+Interest Coverage Ratio (Interest expense to EBIT),0.046280246
+ROA(A) before interest and % after tax,0.037560914

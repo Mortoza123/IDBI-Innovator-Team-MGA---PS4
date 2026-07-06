@@ -1,0 +1,17 @@
+{
+  "top_10_global_drivers": {
+    "gst_delay_flag": 2.1821999549865723,
+    "unstructured_risk_score": 0.9330999851226807,
+    "Persistent EPS in the Last Four Seasons": 0.8289999961853027,
+    "Borrowing dependency": 0.7271000146865845,
+    "ROA(C) before interest and depreciation before interest": 0.604200005531311,
+    "gst_sentiment": 0.423799991607666,
+    "call_sentiment": 0.420199990272522,
+    "Non-industry income and expenditure/revenue": 0.3571000099182129,
+    "Debt ratio %": 0.33239999413490295,
+    "call_stress_flag": 0.32350000739097595
+  },
+  "explainability_method": "SHAP TreeExplainer on XGBoost fused model",
+  "risk_score_scale": "0-100 percentile-calibrated across the MSME portfolio; same scale can be applied per-segment for cross-segment comparability",
+  "note": "This SHAP layer is the 'common interpretation framework' required by the PS - every prediction, regardless of segment/model, resolves to the same 0-100 score + a ranked list of plain-language reasons."
+}

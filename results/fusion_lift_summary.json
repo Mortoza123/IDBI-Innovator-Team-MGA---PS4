@@ -1,0 +1,32 @@
+{
+  "structured_only": {
+    "label": "MSME - Structured Only (baseline)",
+    "n_train": 5114,
+    "n_test": 1705,
+    "n_features": 30,
+    "default_rate_test": 3.23,
+    "accuracy": 95.84,
+    "auc_roc": 94.06,
+    "ks_statistic": 78.73,
+    "precision": 40.0,
+    "recall": 58.18,
+    "f1": 47.41
+  },
+  "fused": {
+    "label": "MSME - Fused (structured + unstructured)",
+    "n_train": 5114,
+    "n_test": 1705,
+    "n_features": 36,
+    "default_rate_test": 3.23,
+    "accuracy": 97.95,
+    "auc_roc": 99.13,
+    "ks_statistic": 91.94,
+    "precision": 65.15,
+    "recall": 78.18,
+    "f1": 71.07
+  },
+  "recall_lift": 20.0,
+  "auc_lift": 5.07,
+  "accuracy_lift": 2.11,
+  "ks_lift": 13.21
+}
